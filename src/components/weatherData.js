@@ -1,24 +1,12 @@
-const weatherData = [
-    {
-        conditions:'sunny',
-        time:'day'
-    },
-    {
-        conditions:'clear',
-        time:'day'
-    },
-    {
-        conditions:'clear',
-        time:'day'
-    },
-    {
-        conditions:'partly sunny',
-        time:'night'
-    },
-    {
-        conditions:'clear',
-        time:'day'
-    }
-]
+import React from "react";
 
-module.exports = weatherData;
+const WeatherData = (props) => {
+    return(
+        <>
+        <p><span>Conditions:</span>{props.conditions}</p>
+        <p><span>Time:</span>{props.time}</p>
+        </>
+    )
+}
+
+export default WeatherData;
